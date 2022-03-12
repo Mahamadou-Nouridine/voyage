@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
+        integrity="sha512-koDUjGvRZrcni2jJFT9I3VRYY0PWNKtr1Wj9U36eLhcFgBm46KV11yTi4p2H3HwUMirxZ+dMpKeUuRjYOFjeDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.css"
+        integrity="sha512-TVNZcv0J8VIKwc9PuINGUaXpAtIvvfc8bO1frc8Xl7N4mWxH8mCCjubLdlhi6xYJKFyZrYEqEXQkoiOvglmtZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.js"
+        integrity="sha512-LSynsHcISjg2FJcfjq+IqrgsAAdo8A6t35zA/Fys/mZWuaiTS9a8oB5IXFW15oAJF/9KA5OWUx8RwWd9I4RVrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"
+        integrity="sha512-zCHGovd9kHtyOdCLYmXApVFPtXQjZNyjHGU6DKPKR1HnhiSnVc71r1x7bpahdGw7mOKbz6oZ1k7/gbfRNp50ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="all.min.css">
+
+    
+
+    
+    <title>Voyage</title>
+</head>
+
+<body>
+    <nav class="teal" style="padding: 0px 10px;position: fixed; z-index: 3;">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">voyage</a>
+
+            <a href="#" class="sidenav-trigger " data-target="mobile-nav"><i class="material-icons">menu</i></a>
+
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Popular places</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#"> contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav " id="mobile-nav">
+        <li><a href="#">home</a></li>
+        <li><a href="#">video</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">about </a></li>
+        <li><a href="#"> contact</a></li>
+    </ul>
+
+    <div class="slider"  >
+        <ul class="slides">
+            <li>
+                <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+                <div class="caption center-align">
+                    <h3>take your dream vaccation</h3>
+                    <H5 class="light grey-text text-lighten-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis dicta veniam illo odio qui eni</H5>
+                    <a href="#" class="waves-effect waves-steal btn">more</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+                <div class="caption left-align">
+                    <h3>We work with all budgets</h3>
+                    <h5 class="light grey-text text-lighten-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis dicta veniam illo odio qui eni</h5>
+                    <a href="#" class="waves-effect waves-steal btn">more</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="">
+                <div class="caption right-align">
+                    <h3>Groups and individual Gateways</h3>
+                    <h5 class="light text-grey test-lighten-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis dicta veniam illo odio qui eni</h5>
+                    <a href="#" class="waves-effect waves-steal btn">more</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row teal " style="margin-top: -30px;">
+        <div class="row  lighten-3" style="max-width: 1000px">
+            <h3 class="center-align text-white">Search Destinations</h3>
+            <div class="input-field">
+                <input type="search" id="autocomplete" class="autocomplete white" placeholder="Niamey, Maradi, etc...">
+            </div>
+        </div>
+    </div>
+    <div class="row grey lighten-5 " style="display: flex; justify-content: center; padding: 20px; margin-top: -20px;">
+        <div class="row center-align"
+            style="max-width: 90%; display: flex; justify-content: center ; flex-wrap: wrap;">
+
+            <div class="card" style="max-width: 32%; min-width: 350px;;">
+                <div class="card-content ">
+                    <i class="material-icons large">location_on</i>
+                    <h4>Pick Where</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 32%; min-width: 350px;;margin-left: 20px;margin-right: 20px;">
+                <div class="card-content">
+                    <i class="material-icons large">
+                        store_mall_directory
+                    </i>
+                    <h4>Travel Shop</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card " style="max-width: 32%; min-width: 350px;;">
+                <div class="card-content ">
+                    <i class="material-icons large">flight</i>
+                    <h4>Fly Cheap</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row"
+        style="display: flex; justify-content: center; padding: 20px; margin-top: -20px; flex-direction: column;">
+        <h3 class="center-align"><span class="teal-text">Popular</span> Places</h3>
+        <div class="row center-align"
+            style="max-width:90%; display: flex; justify-content: center ; flex-wrap: wrap; padding: 20px">
+
+            <div class="card" style="max-width: 32%; min-width: 350px;;">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/1068989/pexels-photo-1068989.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                    <span class="card-title">Pilllule Niamey</span>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, distinctio inventore! Sapiente similique sit minima velit at totam cum vel a ipsa amet neque labore ab, dolore nam quam aperiam?.</p>
+                </div>
+            </div>
+            <div class="card" style="max-width: 32%; min-width: 350px;;margin-left: 20px;margin-right: 20px;">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/804410/pexels-photo-804410.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                    <span class="card-title">Reserve Kouray</span>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, distinctio inventore! Sapiente similique sit minima velit at totam cum vel a ipsa amet neque labore ab, dolore nam quam aperiam?.</p>
+                </div>
+            </div>
+            <div class="card" style="max-width: 32%; min-width: 350px;;">
+                <div class="card-image">
+                    <img
+                        src="https://images.pexels.com/photos/1534172/pexels-photo-1534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                    <span class="card-title">Ingal Agadez</span>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, distinctio inventore! Sapiente similique sit minima velit at totam cum vel a ipsa amet neque labore ab, dolore nam quam aperiam?.</p>
+                </div>
+            </div>
+            
+        </div>
+        <a href="" class="btn  waves-effect grey darken-4 waves-light valign-wrapper" style="width: 300px; margin: auto;"><i class="material-icons">
+            send
+            </i> Contact for booking</a>
+
+        
+
+    </div>
+    <div class=" teal white-text center-align">
+        <h3>Follow 227Voyage</h3>
+        <h5>Follow on social media for special offers</h5>
+        <div class="row center-align" style="display: flex;justify-content:center; margin-top: 20px;">
+            <div style="margin: 5px;" ><i class="fa-brands fa-facebook-square medium"></i></div>
+            <div style="margin: 5px;"><i class="fa-brands fa-twitter medium"></i></div>
+            <div style="margin: 5px;"><i class="fa-brands fa-linkedin medium"></i></div>
+            <div style="margin: 5px;"><i class="fa-brands fa-google-plus-g medium"></i></div>
+            <div style="margin: 5px;"><i class="fa-brands fa-pinterest-p large"></i></div>
+        </div>
+    </div>
+    <div>
+        <div class="row" style="max-width: 90%;">
+            <div class="col s12 m3" style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/1112186/pexels-photo-1112186.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+        </div>
+        <div class="row" style="max-width: 90%;">
+            <div class="col s12 m3" style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+            <div class="col s12 m3"  style="max-width:24%; min-width: 200px;">
+                <img src="https://images.pexels.com/photos/1112186/pexels-photo-1112186.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row" style="max-width: 90%;">
+            <div class="col s12 m6 center-align">
+                <div class="row teal " style="max-width: 99%;">
+                    <i class="material-icons large">
+                        mail
+                        </i>
+                        <h4>Contact us for Booking</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolor expedita sint dicta magnam beatae sit </p>
+                </div>
+                <div class="row" style="max-width: 99.9%; margin-top: -15px;">
+                    <div class="left-align collection" >
+                        <div class="row collection-item valign-wrapper" style="max-height:40px ;"><h6>Location</h6></div>
+                        <div class="row collection-item valign-wrapper " style="max-height:40px ;">227voyage Agency</div>
+                        <div class="row collection-item valign-wrapper" style="max-height:40px ;">555 Beach rd, Suite 33</div>
+                        <div class="row collection-item valign-wrapper" style="max-height:40px ;">Niamey, NE, 447055</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 grey lighten-3">
+                <h5 style="max-width: 99%;">Please fill out this form</h5>
+                <div style="max-width: 99.9%;">
+                    <div class="input-field">
+                        <input type="text" placeholder="Name" id="name" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email" id="mail" class="validate">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" placeholder="Phone" id="phone" class="validate">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea  placeholder="Message" id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn waves-effect waves-light">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer teal">
+        <div class="footer-copyright valign-center" > 
+            <p class="" style="margin: auto; height: 100px;">227Voyage © 2019</p>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            indicators: false,
+        });
+
+    });
+    $(document).ready(function () {
+        $('input.autocomplete').autocomplete({
+            data: {
+                "Niamey": null,
+                "Maradi": null,
+                "Zinder": null,
+                "Diffa": null,
+                "Agadez": null,
+                "Tahoua": null,
+                "Dosso": null,
+                "Tillaberi": null,
+
+            },
+        });
+    });
+
+
+
+
+
+
+</script>
+
+</html>
